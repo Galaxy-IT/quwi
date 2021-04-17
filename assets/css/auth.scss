@@ -1,0 +1,71 @@
+.auth-wrap {
+  height: 100vh;
+
+  .auth-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.auth {
+  &__item {
+    margin-bottom: .5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__label {
+    font-weight: 500;
+    font-size: .9375rem;
+  }
+  &__input {
+    width: 100%;
+    margin-top: .3125rem;
+    padding: .73rem .625rem;
+    font-size: .875rem;
+    border: 1px solid $darkGray;
+    border-radius: 2px;
+  }
+  &__btn {
+    cursor: pointer;
+    color: $baseWhite;
+    background: $darkBlue;
+    border-radius: .25rem;
+    margin-top: .90rem;
+    font-size: .75rem;
+    padding: .6rem .5rem;
+    width: 100%;
+    max-width: 6.25rem;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(.9);
+    }
+  }
+  &-container {
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  &-title {
+    margin-bottom: 0.625rem;
+    font-size: 1.2rem;
+  }
+}
+.auth__input::-webkit-input-placeholder {
+  color: $secondaryGray;
+}
+.auth__input::-moz-placeholder {
+  color: $secondaryGray;
+}
+.auth__input-ms-input-placeholder {
+  color: $secondaryGray;
+}
+.auth__item.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.invalid-message{
+  color: red;
+}

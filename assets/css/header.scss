@@ -1,0 +1,42 @@
+.header {
+  border-bottom: 2px solid $darkGray;
+  padding: 1rem 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.logo {
+  a {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin: 0 .5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    a {
+      color: $secondaryGray;
+      transition: all .3s ease;
+    }
+    button {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $secondaryGray;
+      transition: all .3s ease;
+
+    }
+    &:hover {
+      a, button {
+        color: $baseBlack;
+      }
+    }
+  }
+}
